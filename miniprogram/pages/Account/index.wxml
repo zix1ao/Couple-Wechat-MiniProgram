@@ -1,7 +1,7 @@
 <wxs module="util" src="../util.wxs" />
 
 <view class="container white" wx:if="{{allItems.length === 0}}">
-  <image class="background" src="Images/None.png" mode="aspectFit" />
+  <image class="background" src="https://github.com/zix1ao/Couple-Wechat-MiniProgram/blob/main/images/None.png?raw=true" mode="aspectFit" />
   <view class="title">这里空空如也...</view>
   <view class="subtitle">是不是该逛逛商城犒劳一下自己了？</view>
 </view>

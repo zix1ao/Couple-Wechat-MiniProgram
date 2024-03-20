@@ -1,9 +1,9 @@
 <view style="width:100%; background: none;">
 
   <swiper indicator-dots="true" autoplay="true" interval="2000" duration="500" style="background: white; height: 400px; width: 100%;">
-      <swiper-item><image src="Images/HomeCover01.png" mode='heightFix & widthFix' class="swiper-image" /></swiper-item>
-      <swiper-item><image src="Images/HomeCover02.png" mode='heightFix & widthFix' class="swiper-image" /></swiper-item>
-      <swiper-item><image src="Images/HomeCover03.png" mode='heightFix & widthFix' class="swiper-image" /></swiper-item>
+      <swiper-item><image src="https://github.com/zix1ao/Couple-Wechat-MiniProgram/blob/main/images/HomeCover01.png?raw=true" mode='heightFix & widthFix' class="swiper-image" /></swiper-item>
+      <swiper-item><image src="https://github.com/zix1ao/Couple-Wechat-MiniProgram/blob/main/images/HomeCover02.png?raw=true" mode='heightFix & widthFix' class="swiper-image" /></swiper-item>
+      <swiper-item><image src="https://github.com/zix1ao/Couple-Wechat-MiniProgram/blob/main/images/HomeCover03.png?raw=true" mode='heightFix & widthFix' class="swiper-image" /></swiper-item>
   </swiper>
 
 <view class="form-group_label">💰 积分榜</view>

@@ -1,16 +1,16 @@
 <wxs module="util" src="../util.wxs" />
 
 <view class="container white" wx:if="{{allMissions.length === 0}}">
-  <image class="background" src="Images/None.png" mode="aspectFit" />
+  <image class="background" src="https://github.com/zix1ao/Couple-Wechat-MiniProgram/blob/main/images/None.png?raw=true" mode="aspectFit" />
   <view class="title">暂无任务</view>
   <view class="subtitle">快给自己定个小目标吧～</view>
 </view>
 
 <swiper wx:if="{{allMissions.length > 0}}" indicator-dots="true" autoplay="true" interval="2000" duration="500" 
 style="height: 400px; width: 100%; background: white; ">
-      <swiper-item><image src="Images/MissionCover01.png" mode='widthFix & heightFix' class="swiper-image" /></swiper-item>
-      <swiper-item><image src="Images/MissionCover02.png" mode='widthFix & heightFix' class="swiper-image" /></swiper-item>
-      <swiper-item><image src="Images/MissionCover03.png" mode='widthFix & heightFix' class="swiper-image" /></swiper-item>
+      <swiper-item><image src="https://github.com/zix1ao/Couple-Wechat-MiniProgram/blob/main/images/MissionCover01.png?raw=true" mode='widthFix & heightFix' class="swiper-image" /></swiper-item>
+      <swiper-item><image src="https://github.com/zix1ao/Couple-Wechat-MiniProgram/blob/main/images/MissionCover02.png?raw=true" mode='widthFix & heightFix' class="swiper-image" /></swiper-item>
+      <swiper-item><image src="https://github.com/zix1ao/Couple-Wechat-MiniProgram/blob/main/images/MissionCover03.png?raw=true" mode='widthFix & heightFix' class="swiper-image" /></swiper-item>
 </swiper>
 
 <view class="container" wx:if="{{allMissions.length > 0}}">
@@ -31,8 +31,8 @@ style="height: 400px; width: 100%; background: white; ">
             <view class="mission-info_date">📅 {{util.cutStr(item.date, 10)}} 创建</view>
           </view>
           <view class="mission-info_author">
-            <image style="position: absolute; width: 100%; bottom: 0;" wx:if="{{item._openid === _openidA}}" mode="widthFix" src="Images/MissionA.png"/>
-            <image style="position: absolute; width: 100%; bottom: 0;" wx:if="{{item._openid === _openidB}}" mode="widthFix" src="Images/MissionB.png"/>
+            <image style="position: absolute; width: 100%; bottom: 0;" wx:if="{{item._openid === _openidA}}" mode="widthFix" src="https://github.com/zix1ao/Couple-Wechat-MiniProgram/blob/main/images/MarketA.png?raw=true"/>
+            <image style="position: absolute; width: 100%; bottom: 0;" wx:if="{{item._openid === _openidB}}" mode="widthFix" src="https://github.com/zix1ao/Couple-Wechat-MiniProgram/blob/main/images/MarketB.png?raw=true"/>
           </view>
           <image wx:if="{{item.star}}" class="star" src="Images/Star.png" />
         </view>
