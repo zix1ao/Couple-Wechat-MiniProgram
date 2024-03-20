@@ -10,11 +10,29 @@
     "pages/Account/index",
     "pages/ItemDetail/index"
   ],
+  "subPackages":[
+      {
+        "root":"subPackages/Mission/Images",
+        "pages": [
+          "pages/Mission/Images"
+        ]
+      }, {
+        "root":"subPackages/Market",
+        "pages": [
+          "pages/Market/index"
+        ]
+      }, {
+        "root":"subPackages/Account",
+        "pages": [
+          "pages/Account/index"
+        ]
+      }
+    ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#ff99aa",
-    "navigationBarTitleText": "卡比们的任务",
+    "navigationBarTitleText": "Xiao涵宝杂货铺",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
@@ -22,23 +40,23 @@
     "selectedColor": "#ff99aa",
     "list": [{
       "pagePath": "pages/MainPage/index",
-      "selectedIconPath": "images/TabBar/HomeIconColor.jpg",
-      "iconPath": "images/TabBar/HomeIconGrey.jpg",
+      "selectedIconPath": "images/TabBar/HomeIconColor.png",
+      "iconPath": "images/TabBar/HomeIconGrey.png",
       "text": "首页"
     }, {
       "pagePath": "pages/Mission/index",
-      "selectedIconPath": "images/TabBar/MissionIconColor.jpg",
-      "iconPath": "images/TabBar/MissionIconGrey.jpg",
+      "selectedIconPath": "images/TabBar/MissionIconColor.png",
+      "iconPath": "images/TabBar/MissionIconGrey.png",
       "text": "任务"
     },{
       "pagePath": "pages/Market/index",
-      "selectedIconPath": "images/TabBar/MarketIconColor.jpg",
-      "iconPath": "images/TabBar/MarketIconGrey.jpg",
+      "selectedIconPath": "images/TabBar/MarketIconColor.png",
+      "iconPath": "images/TabBar/MarketIconGrey.png",
       "text": "商城"
     },{
       "pagePath": "pages/Account/index",
-      "selectedIconPath": "images/TabBar/AccountIconColor.jpg",
-      "iconPath": "images/TabBar/AccountIconGrey.jpg",
+      "selectedIconPath": "images/TabBar/AccountIconColor.png",
+      "iconPath": "images/TabBar/AccountIconGrey.png",
       "text": "仓库"
     }]
   },

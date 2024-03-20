@@ -45,7 +45,7 @@
     },
     "compileType": "miniprogram",
     "libVersion": "2.14.1",
-    "appid": "wx461db390b6650bea",
+    "appid": "wxb218715b9cf3366f",
     "projectname": "DailyMissions",
     "miniprogramRoot": "miniprogram/",
     "cloudfunctionRoot": "cloudfunctions/",
@@ -55,5 +55,6 @@
     "editorSetting": {
         "tabIndent": "insertSpaces",
         "tabSize": 4
-    }
+    },
+    "simulatorPluginLibVersion": {}
 }
