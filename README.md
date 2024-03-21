@@ -34,7 +34,7 @@ This project is licensed under the [MIT License](LICENSE), the same license as t
 This project is intended for personal learning and research purposes only, not for commercial use.
 
 
-—————————————————————————————————————————————————————————————————————————————————————————————————————————
+———————————————————————————————————————————————————————————
 
 
 # 情侣互动微信小程序
