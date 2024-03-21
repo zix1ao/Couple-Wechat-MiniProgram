@@ -1,8 +1,47 @@
-# 情侣互动小程序
+# Couples Interaction Wechat Mini Program
+
+## Introduction
+
+This is a couples interaction Wechat mini program built using cloud development capabilities, which includes the use of basic cloud development abilities:
+- **Database**: Reading, writing, and managing document-type databases.
+- **Cloud Functions**: Code that runs in the cloud, where developers only need to write the logic code.
+
+## Original Project
+
+This project is based on [UxxHans/Rainbow-Cats-Personal-WeChat-MiniProgram](https://github.com/UxxHans/Rainbow-Cats-Personal-WeChat-MiniProgram) for study and modification purposes. Special thanks to the original author for providing the code and documentation.
+
+## Learning Objectives
+
+- Explore how to build WeChat mini programs.
+- Learn to use mini programs for API calls.
+- Understand the user interface design of WeChat mini programs.
+
+## Modifications and Extensions
+
+- Changed the mini program theme.
+- Modified the adaptation size of the images.
+
+## Acknowledgements
+
+Thanks again to [UxxHans](https://github.com/UxxHans) and everyone who contributed to the [Rainbow-Cats-Personal-WeChat-MiniProgram](https://github.com/UxxHans/Rainbow-Cats-Personal-WeChat-MiniProgram) project.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE), the same license as the original project [UxxHans/Rainbow-Cats-Personal-WeChat-MiniProgram](https://github.com/UxxHans/Rainbow-Cats-Personal-WeChat-MiniProgram).
+
+## Statement
+
+This project is intended for personal learning and research purposes only, not for commercial use.
+
+
+—————————————————————————————————————————————————————————————————————————————————————————————————————————
+
+
+# 情侣互动微信小程序
 
 ## 简介
 
-这是使用云开发能力构建的情侣互动小程序，其中使用了云开发基础能力的使用：
+这是使用云开发能力构建的情侣互动微信小程序，其中使用了云开发基础能力的使用：
 - **数据库**：对文档型数据库进行读写和管理
 - **云函数**：在云端运行的代码，开发者只需编写业务逻辑代码
 
