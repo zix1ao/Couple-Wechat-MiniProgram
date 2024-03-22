@@ -12,7 +12,7 @@
 </view>
 
 <swiper wx:if="{{allItems.length > 0}}" indicator-dots="true" autoplay="true" interval="2000" duration="500" 
-style="background: white; height: 400px; width: 100%;">
+style="background: white; height: 500px; width: 100%;">
   <swiper-item><image src="https://github.com/zix1ao/Couple-Wechat-MiniProgram/blob/main/images/MarketCover01.png?raw=true" mode='widthFix & heightFix' class="swiper-image" /></swiper-item>
   <swiper-item><image src="https://github.com/zix1ao/Couple-Wechat-MiniProgram/blob/main/images/MarketCover02.png?raw=true" mode='widthFix & heightFix' class="swiper-image" /></swiper-item>
   <swiper-item><image src="https://github.com/zix1ao/Couple-Wechat-MiniProgram/blob/main/images/MarketCover03.png?raw=true" mode='widthFix & heightFix' class="swiper-image" /></swiper-item>

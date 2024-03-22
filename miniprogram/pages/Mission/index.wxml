@@ -7,7 +7,7 @@
 </view>
 
 <swiper wx:if="{{allMissions.length > 0}}" indicator-dots="true" autoplay="true" interval="2000" duration="500" 
-style="height: 400px; width: 100%; background: white; ">
+style="height: 500px; width: 100%; background: white; ">
       <swiper-item><image src="https://github.com/zix1ao/Couple-Wechat-MiniProgram/blob/main/images/MissionCover01.png?raw=true" mode='widthFix & heightFix' class="swiper-image" /></swiper-item>
       <swiper-item><image src="https://github.com/zix1ao/Couple-Wechat-MiniProgram/blob/main/images/MissionCover02.png?raw=true" mode='widthFix & heightFix' class="swiper-image" /></swiper-item>
       <swiper-item><image src="https://github.com/zix1ao/Couple-Wechat-MiniProgram/blob/main/images/MissionCover03.png?raw=true" mode='widthFix & heightFix' class="swiper-image" /></swiper-item>
