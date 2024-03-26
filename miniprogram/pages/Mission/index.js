@@ -109,20 +109,20 @@ Page({
     await wx.cloud.callFunction({name: 'getOpenId'}).then(async openid => {
 
         //处理完成点击事件
-        if (index === 0) {
-            if(isUpper) {
-                this.finishMission(element)
-            }else{
-                wx.showToast({
-                    title: '任务已经完成',
-                    icon: 'error',
-                    duration: 2000
-                })
+        if(mission._openid !== openid.result) {
+            if (index === 0) {
+                if(isUpper) {
+                    this.finishMission(element)
+                }else{
+                    wx.showToast({
+                        title: '任务已经完成',
+                        icon: 'error',
+                        duration: 2000
+                    })
+                }
             }
-
-        }else if(mission._openid === openid.result){
             //处理星标按钮点击事件
-            if (index === 1) {
+            else if (index === 1) {
                 wx.cloud.callFunction({name: 'editStar', data: {_id: mission._id, list: getApp().globalData.collectionMissionList, value: !mission.star}})
                 //更新本地数据
                 mission.star = !mission.star
@@ -143,6 +143,7 @@ Page({
                     })
                 }
             }
+            
 
             //触发显示更新
             this.setData({finishedMissions: this.data.finishedMissions, unfinishedMissions: this.data.unfinishedMissions})
@@ -150,7 +151,7 @@ Page({
         //如果编辑的不是自己的任务，显示提醒
         }else{
             wx.showToast({
-            title: '只能编辑自己的任务',
+            title: '不能编辑对方的',
             icon: 'error',
             duration: 2000
             })
@@ -166,7 +167,7 @@ Page({
 
     await wx.cloud.callFunction({name: 'getOpenId'}).then(async openid => {
       if(mission._openid != openid.result){
-        //完成对方任务，奖金打入对方账号
+        //对方完成任务，奖金打入对方账号
         await wx.cloud.callFunction({name: 'editAvailable', data: {_id: mission._id, value: false, list: getApp().globalData.collectionMissionList}})
         await wx.cloud.callFunction({name: 'editCredit', data: {_openid: mission._openid, value: mission.credit, list: getApp().globalData.collectionUserList}})
 
@@ -183,7 +184,7 @@ Page({
 
       }else{
         wx.showToast({
-          title: '不能完成自己的任务',
+          title: '不能完成对方的任务',
           icon: 'error',
           duration: 2000
         })

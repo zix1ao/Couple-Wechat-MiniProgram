@@ -31,8 +31,8 @@ style="height: 500px; width: 100%; background: white; ">
             <view class="mission-info_date">📅 {{util.cutStr(item.date, 10)}} 创建</view>
           </view>
           <view class="mission-info_author">
-            <image style="position: absolute; width: 100%; bottom: 0;" wx:if="{{item._openid === _openidA}}" mode="widthFix" src="https://github.com/zix1ao/Couple-Wechat-MiniProgram/blob/main/images/MarketA.png?raw=true"/>
-            <image style="position: absolute; width: 100%; bottom: 0;" wx:if="{{item._openid === _openidB}}" mode="widthFix" src="https://github.com/zix1ao/Couple-Wechat-MiniProgram/blob/main/images/MarketB.png?raw=true"/>
+            <image style="position: absolute; width: 100%; bottom: 0;" wx:if="{{item._openid === _openidA}}" mode="widthFix" src="https://github.com/zix1ao/Couple-Wechat-MiniProgram/blob/main/images/MarketB.png?raw=true"/>
+            <image style="position: absolute; width: 100%; bottom: 0;" wx:if="{{item._openid === _openidB}}" mode="widthFix" src="https://github.com/zix1ao/Couple-Wechat-MiniProgram/blob/main/images/MarketA.png?raw=true"/>
           </view>
           <image wx:if="{{item.star}}" class="star" src="Images/Star.png" />
         </view>
@@ -52,8 +52,8 @@ style="height: 500px; width: 100%; background: white; ">
             <view class="mission-info_date">📅 {{util.cutStr(item.date, 10)}} 创建</view>
           </view>
           <view class="mission-info_author">
-              <image style="position: absolute; width:100%; bottom: 0;" wx:if="{{item._openid === _openidA}}" mode="widthFix" src="https://github.com/zix1ao/Couple-Wechat-MiniProgram/blob/main/images/MarketA.png?raw=true"/>
-              <image style="position: absolute; width:100%; bottom: 0;" wx:if="{{item._openid === _openidB}}" mode="widthFix" src="https://github.com/zix1ao/Couple-Wechat-MiniProgram/blob/main/images/MarketB.png?raw=true"/>
+              <image style="position: absolute; width:100%; bottom: 0;" wx:if="{{item._openid === _openidA}}" mode="widthFix" src="https://github.com/zix1ao/Couple-Wechat-MiniProgram/blob/main/images/MarketB.png?raw=true"/>
+              <image style="position: absolute; width:100%; bottom: 0;" wx:if="{{item._openid === _openidB}}" mode="widthFix" src="https://github.com/zix1ao/Couple-Wechat-MiniProgram/blob/main/images/MarketA.png?raw=true"/>
           </view>
           <image wx:if="{{item.star}}" class="star" src="Images/Star.png" />
         </view>

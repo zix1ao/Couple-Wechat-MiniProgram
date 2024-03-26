@@ -15,7 +15,7 @@ Page({
           templateId: 'R5sHALA7TKs6jCyH_kwNr9l8vVfWKCU5cXQnFKWlwfA',//这里我就直接把模板ID传给云函数了
           me:'Test_me',
           name:'Test_activity',
-          _openid:'odPPg4mBicTjUXPX29A3KIzu5kYc'//填入自己的openid
+          _openid:'on2us6xjT_C6ew3fdnJyTid8Jvgc'//填入自己的openid
       },
       success: res => {
           console.warn('[云函数] [openapi] subscribeMessage.send 调用成功：', res)
