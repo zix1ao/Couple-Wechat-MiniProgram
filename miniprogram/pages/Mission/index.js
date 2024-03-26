@@ -151,7 +151,7 @@ Page({
         //如果编辑的不是自己的任务，显示提醒
         }else{
             wx.showToast({
-            title: '不能编辑对方的',
+            title: '不能编辑对方的任务',
             icon: 'error',
             duration: 2000
             })
@@ -166,10 +166,14 @@ Page({
     const mission = this.data.unfinishedMissions[missionIndex]
 
     await wx.cloud.callFunction({name: 'getOpenId'}).then(async openid => {
-      if(mission._openid != openid.result){
         //对方完成任务，奖金打入对方账号
         await wx.cloud.callFunction({name: 'editAvailable', data: {_id: mission._id, value: false, list: getApp().globalData.collectionMissionList}})
-        await wx.cloud.callFunction({name: 'editCredit', data: {_openid: mission._openid, value: mission.credit, list: getApp().globalData.collectionUserList}})
+        if (mission._openid == "on2us6wZ7tJaFmL_lE-uojSWgZ3A") {
+          await wx.cloud.callFunction({name: 'editCredit', data: {_openid: "on2us6xjT_C6ew3fdnJyTid8Jvgc", value: mission.credit, list: getApp().globalData.collectionUserList}})
+        } else {
+          await wx.cloud.callFunction({name: 'editCredit', data: {_openid: "on2us6wZ7tJaFmL_lE-uojSWgZ3A", value: mission.credit, list: getApp().globalData.collectionUserList}})
+        }
+
 
         //触发显示更新
         mission.available = false
@@ -181,14 +185,6 @@ Page({
             icon: 'success',
             duration: 2000
         })
-
-      }else{
-        wx.showToast({
-          title: '不能完成对方的任务',
-          icon: 'error',
-          duration: 2000
-        })
-      }
     })
   },
 })
